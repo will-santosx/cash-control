@@ -14,10 +14,15 @@ export default {
 					300: "#2C514C",
 					400: "#263e3b",
 					black: "#0D0D0D",
-					white: "#F2F2F2",
+					"black-secondary": "#2B2B2B",
+					white: {
+						primary: "#F2F2F2",
+						secondary: "#E2E2E2",
+						tertiary: "#D0D0D0",
+					},
 				},
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("tailwindcss-animated")],
 };
