@@ -10,8 +10,8 @@ const Main = () => {
 		<main className="flex flex-col justify-between items-start font-base font-light text-theme-white-primary relative w-full h-[85%] md:h-[90%]">
 			{newEntryPage ? null : (
 				<>
-					<div className="w-full flex">
-						<div className="bg-theme-white-secondary p-5 ml-8 w-[70%] h-[28rem] rounded-md shadow-md">
+					<div className="w-full flex items-center">
+						<div className="bg-theme-white-secondary p-5 ml-8 mr-12 w-[70%] h-[28rem] rounded-md shadow-md">
 							<h3 className="text-theme-black-secondary uppercase font-medium">
 								Suas Atividades
 							</h3>
@@ -28,7 +28,11 @@ const Main = () => {
 								Nova Transação.
 							</button>
 						</div>
-						<div className="flex flex-col"></div>
+						<div className="flex flex-col gap-5">
+							<Card type={"profit"} />
+							<Card type={"expense"} />
+							<Card />
+						</div>
 					</div>
 				</>
 			)}
